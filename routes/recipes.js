@@ -5,7 +5,23 @@ const Recipe = require('../models/recipeModel');
 /* GET users listing. */
 router.get('/', async (req, res) => {
   try {
-    const recipes = await Recipe.find()
+    const {opinion, ingredient} = req.query;
+
+    let recipes;
+
+    if (!opinion && !ingredient) {
+      recipes = await Recipe.find()
+    }
+    else if (!ingredient && opinion) {
+      recipes = await Recipe.find({opinion: opinion})
+    }
+    else if (!opinion && ingredient) {
+      recipes = await Recipe.find({ingredients:{$elemMatch: {$eq: ingredient}}})
+    }
+    else {
+      recipes = await Recipe.find({$and:[{ingredients:{$elemMatch: {$eq: ingredient}}}, {opinion: opinion}]})
+    }
+
     res.json(recipes)
   }
   catch (error) {

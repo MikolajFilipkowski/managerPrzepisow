@@ -3,9 +3,17 @@
 ### GET request to the server
 GET http://localhost:3000/recipes
 
-### GET request to the server
-
+### GET filter id request to the server
 GET http://localhost:3000/recipes/{{id}}
+
+### GET filter opinion request to the server
+GET http://localhost:3000/recipes?opinion=5
+
+### GET filter ingredients request to the server
+GET http://localhost:3000/recipes?ingredient=szczypta+soli
+
+### GET filter both request to the server
+GET http://localhost:3000/recipes?ingredient=szczypta+soli&opinion=5
 
 ### POST request to the server
 POST http://localhost:3000/recipes
