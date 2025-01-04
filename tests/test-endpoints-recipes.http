@@ -33,6 +33,24 @@ Content-Type: application/json
   "opinion": 4
 }
 
+### POST wrong request to the server
+POST http://localhost:3000/recipes
+Content-Type: application/json
+
+{
+  "name": "Kanapka z awokado",
+  "ingredients": [
+    "2 kromki chleba pełnoziarnistego",
+    "1 dojrzałe awokado",
+    "1 łyżeczka soku z cytryny",
+    "szczypta soli",
+    "szczypta pieprzu",
+    "opcjonalnie: plasterki pomidora lub jajko na twardo"
+  ],
+  "description": "Obierz awokado, rozgnieć widelcem i wymieszaj z sokiem z cytryny, solą i pieprzem. Posmaruj pastą kromki chleba. Opcjonalnie dodaj plasterki pomidora lub jajko na twardo.",
+  "opinion": 6
+}
+
 ### PUT request to the server
 PUT http://localhost:3000/recipes/{{id}}
 Content-Type: application/json

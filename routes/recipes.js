@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
   }
   catch (error) {
     console.error(`MongoDB error: ${error}`);
-    res.status(500).json({message: 'Something went wrong'});
+    res.status(500).json({message: `Something went wrong: ${error.message}`});
   }
 });
 
@@ -37,7 +37,7 @@ router.get('/:id', async (req, res) => {
   }
   catch (error) {
     console.error(`MongoDB error: ${error}`);
-    res.status(500).json({message: 'Something went wrong'});
+    res.status(500).json({message: `Something went wrong: ${error.message}`});
   }
 })
 
@@ -61,7 +61,7 @@ router.post('/', async (req, res) => {
     res.status(201).json(newRecipe);
   } catch (error) {
     console.error(`MongoDB error: ${error}`);
-    res.status(500).json({message: 'Something went wrong'});
+    res.status(500).json({message: `Something went wrong: ${error.message}`});
   }
 })
 
@@ -88,7 +88,7 @@ router.put('/:id', async (req, res) => {
 
   } catch (error) {
     console.error(`MongoDB error: ${error}`);
-    res.status(400).json({message: 'Something went wrong'});
+    res.status(400).json({message: `Something went wrong: ${error.message}`});
   }
 })
 
@@ -105,6 +105,7 @@ router.delete('/:id', async (req, res) => {
     res.status(200).json({message:"Deleted recipe ",recipe});
   } catch (error) {
     console.error(`MongoDB error: ${error}`);
+    res.status(500).json({message: `Something went wrong: ${error.message}`});
   }
 })
 
