@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Makaron z pesto",
+    "ingredients": [
+      "200 g makaronu spaghetti",
+      "100 g pesto bazyliowego",
+      "2 łyżki oliwy z oliwek",
+      "50 g tartego parmezanu",
+      "sól i pieprz do smaku"
+    ],
+    "description": "Ugotuj makaron według instrukcji na opakowaniu. Odcedź i wymieszaj z pesto oraz oliwą z oliwek. Posyp startym parmezanem i dopraw solą oraz pieprzem.",
+    "opinion": 5
+  },
+  {
+    "name": "Sałatka grecka",
+    "ingredients": [
+      "1 ogórek",
+      "2 pomidory",
+      "1 czerwona cebula",
+      "100 g sera feta",
+      "20 g czarnych oliwek",
+      "2 łyżki oliwy z oliwek",
+      "szczypta oregano"
+    ],
+    "description": "Pokrój warzywa i ser feta w kostkę. Wymieszaj w misce, dodaj oliwki i polej oliwą z oliwek. Posyp oregano i podawaj schłodzoną.",
+    "opinion": 4
+  },
+  {
+    "name": "Zupa pomidorowa",
+    "ingredients": [
+      "500 ml bulionu",
+      "400 g pomidorów z puszki",
+      "1 cebula",
+      "2 ząbki czosnku",
+      "2 łyżki śmietany",
+      "szczypta cukru, sól i pieprz"
+    ],
+    "description": "Podsmaż cebulę i czosnek na odrobinie oliwy, dodaj pomidory z puszki i bulion. Gotuj przez 15 minut. Zblenduj, dopraw cukrem, solą i pieprzem, a na koniec dodaj śmietanę.",
+    "opinion": 5
+  },
+  {
+    "name": "Placki ziemniaczane",
+    "ingredients": [
+      "500 g ziemniaków",
+      "1 cebula",
+      "1 jajko",
+      "2 łyżki mąki pszennej",
+      "sól i pieprz do smaku",
+      "olej do smażenia"
+    ],
+    "description": "Zetrzyj ziemniaki i cebulę na tarce. Wymieszaj z jajkiem, mąką, solą i pieprzem. Smaż placki na rozgrzanym oleju na złoty kolor.",
+    "opinion": 4
+  },
+  {
+    "name": "Omlet z warzywami",
+    "ingredients": [
+      "3 jajka",
+      "50 ml mleka",
+      "1 papryka",
+      "50 g szpinaku",
+      "1 łyżka masła",
+      "sól i pieprz do smaku"
+    ],
+    "description": "Roztrzep jajka z mlekiem, solą i pieprzem. Na patelni roztop masło, podsmaż paprykę i szpinak, a następnie wlej masę jajeczną. Smaż na średnim ogniu do ścięcia.",
+    "opinion": 5
+  }
+]
